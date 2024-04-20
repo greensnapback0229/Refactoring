@@ -1,0 +1,3 @@
+andor@example.com=andrew
+johnny@example.com=john
+satosi@coin.com=satosi
