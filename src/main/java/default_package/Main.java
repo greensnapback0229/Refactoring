@@ -2,6 +2,7 @@ package default_package;
 
 import default_package.Assertion.AssertionMain;
 import default_package.magic_number.MagicNumberMain;
+import default_package.null_object.NullObjectMain;
 import default_package.remove_control_flag.RemoveControlFlagMain;
 
 import java.util.Random;
@@ -11,6 +12,7 @@ public class Main {
         MagicNumberMain magicNumberMain = new MagicNumberMain();
         RemoveControlFlagMain removeControlFlagMain = new RemoveControlFlagMain();
         AssertionMain assertionMain = new AssertionMain();
+        NullObjectMain nullObjectMain = new NullObjectMain();
 
         //Chap1
         displayChapter("Replace magic number with symbolic constant", 1);
@@ -23,6 +25,10 @@ public class Main {
         //Chap03
         displayChapter("Assertion", 3);
         assertionMain.run();
+
+        //Chap04
+        displayChapter("Null Object", 4);
+        nullObjectMain.run();
 
     }
 

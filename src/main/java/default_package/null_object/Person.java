@@ -40,7 +40,7 @@ public class Person {
         else{
             result += _mail;
         }
-
+        result += "]";
         return result;
     }
 }
