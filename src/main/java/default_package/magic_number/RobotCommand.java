@@ -1,4 +1,4 @@
-package defalut_package.magic_number;
+package default_package.magic_number;
 
 public class RobotCommand {
     private final String _name;

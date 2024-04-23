@@ -1,4 +1,4 @@
-package defalut_package.magic_number;
+package default_package.magic_number;
 
 public class RobotRefactor2 {
     //permute type code to `class`

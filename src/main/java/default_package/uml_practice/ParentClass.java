@@ -1,4 +1,4 @@
-package defalut_package.uml_practice;
+package default_package.uml_practice;
 
 public abstract class ParentClass {
     private int _field;

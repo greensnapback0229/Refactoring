@@ -6,39 +6,25 @@ import java.io.Reader;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-public class SimpleDatabaseRefactor1 {
+public class SimpleDatabaseRefactor2 {
     private Map<String, String> _map = new HashMap<String, String>();
-
-
-    public SimpleDatabaseRefactor1(Reader r) throws IOException {
+    private static Pattern _pattern = Pattern.compile("([^=]+)=(.*)");
+    public SimpleDatabaseRefactor2(Reader r) throws IOException {
         BufferedReader reader = new BufferedReader(r);
 
-        String line;
-
         while(true){
-            line = reader.readLine();
+            String line = reader.readLine();
             if(line == null)
                 break;
-            else{
-                boolean scanningKey = true;
-                StringBuffer keyBuffer = new StringBuffer();
-                StringBuffer valueBuffer = new StringBuffer();
 
-                for(int i=0;i<line.length();i++){
-                    char c = line.charAt(i);
-                    int equalIndex = line.indexOf("=");
-                    if(line == null){
-                        break;
-                    }
-                    if(equalIndex > 0){
-                        String key = line.substring(0, equalIndex);
-                        String value = line.substring(equalIndex + 1, line.length());
-                    }
-                }
-                String ss1 = keyBuffer.toString();
-                String ss2 = valueBuffer.toString();
-                _map.put(ss1, ss2);
+            Matcher matcher = _pattern.matcher(line);
+            if(matcher.matches()){
+                String key = matcher.group(1);
+                String value = matcher.group(2);
+                _map.put(key, value);
             }
         }
     }

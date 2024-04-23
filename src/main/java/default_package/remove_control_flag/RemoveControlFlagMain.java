@@ -1,4 +1,4 @@
-package defalut_package.remove_control_flag;
+package default_package.remove_control_flag;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -10,7 +10,7 @@ public class RemoveControlFlagMain {
                 1,9,0,2,8,5,6,3,4,7
         };
 
-        if(FindIntRefactor2.find(data,5)){
+        if(default_package.remove_control_flag.FindIntRefactor2.find(data,5)){
             System.out.println("Found!");
         }
 
@@ -19,7 +19,7 @@ public class RemoveControlFlagMain {
         }
 
         try{
-            SimpleDatabase db = new SimpleDatabase((new FileReader("dbfile.txt")));
+            default_package.remove_control_flag.SimpleDatabase db = new default_package.remove_control_flag.SimpleDatabase((new FileReader("src\\main\\java\\default_package\\remove_control_flag\\dbfile.txt")));
             Iterator<String> it = db.iterator();
 
             while(it.hasNext()){

@@ -1,4 +1,4 @@
-package defalut_package.magic_number;
+package default_package.magic_number;
 
 public class RobotRefactor1 {
     //declaration symbolic constant

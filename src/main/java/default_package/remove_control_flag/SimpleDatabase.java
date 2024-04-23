@@ -1,4 +1,4 @@
-package defalut_package.remove_control_flag;
+package default_package.remove_control_flag;
 
 import java.io.BufferedReader;
 import java.io.IOException;
