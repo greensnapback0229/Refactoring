@@ -6,7 +6,7 @@
 
 예) value는 양수여야 한다. 
 * assert value > 0
-* 위 조건 실패시 `Java.lang.AssertionError` exception 발생
+* 위 조건 실패시 `Java.lang.AssertionError` excㅛ   eption 발생
 
 
 |     이름     | 어서션 도입                                                                                                                                                                     |
