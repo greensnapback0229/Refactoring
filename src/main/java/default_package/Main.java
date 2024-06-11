@@ -1,11 +1,11 @@
 package default_package;
 
 import default_package.Assertion.AssertionMain;
+import default_package.extract_class.ExtractClassMain;
 import default_package.magic_number.MagicNumberMain;
 import default_package.null_object.NullObjectMain;
 import default_package.remove_control_flag.RemoveControlFlagMain;
-
-import java.util.Random;
+import default_package.replace_type_code_with_class.ReplaceTypeCodeWithClassMain;
 
 public class Main {
     public static void main(String args[]){
@@ -13,6 +13,8 @@ public class Main {
         RemoveControlFlagMain removeControlFlagMain = new RemoveControlFlagMain();
         AssertionMain assertionMain = new AssertionMain();
         NullObjectMain nullObjectMain = new NullObjectMain();
+        ExtractClassMain extractClassMain = new ExtractClassMain();
+        ReplaceTypeCodeWithClassMain replaceTypeCodeWithClassMain = new ReplaceTypeCodeWithClassMain();
 
         //Chap1
         displayChapter("Replace magic number with symbolic constant", 1);
@@ -29,6 +31,10 @@ public class Main {
         //Chap04
         displayChapter("Null Object", 4);
         nullObjectMain.run();
+
+        //chap06
+        displayChapter("Extract Class", 6);
+        extractClassMain.run();
 
     }
 
