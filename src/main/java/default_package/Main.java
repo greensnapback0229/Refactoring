@@ -36,6 +36,10 @@ public class Main {
         displayChapter("Extract Class", 6);
         extractClassMain.run();
 
+        //chap 07
+        displayChapter("Replace Type Code With Class", 7);
+        replaceTypeCodeWithClassMain.run();
+
     }
 
     public static void displayChapter(String chapterName, int chapterNum){
